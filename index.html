@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="style/styles.css">
+    <link rel="icon" href="/images/icon.png" type="image/x-icon">    
+    <title>Candidatos</title>
+    <link rel="stylesheet" href="css\style.css">
     <link rel="manifest" href="manifest.json">
-    <script src="script.js"></script>
-
 </head>
 <body>
-    <div class="box">
-        <div id="form">
-            <label for="nome">Nome: </label> <br>
-            <input type="text" id="nome" name="nome" required> <br>
-            <label for="cidade">Cidade: </label> <br>
-            <input type="text" id="cidade" name="cidade" required> <br>
-            <br>
-            <button onclick="enviar()">Enviar</button>
+    <main>
+        <h1>Candidatos a Vereador</h1>
+        <p>Pesquise por nome, cidade ou partido.</p>
+
+        <div class="search">
+            <input type="text" id="search-input" placeholder="Pesquisar...">
+            <img id="search-button" src="img\search-01-stroke-rounded.svg" alt="pesquisar">
         </div>
 
-
-        <div id="exibir">
-            <h2 id="displayNome"></h2>
-            <h3 id="displayCidade"></h3>
+        <div class="candidatos">
         </div>
-  </body>
-
+    </main>
+    
+    <script src="js\script.js"></script>
+    
+    <footer>
+        <p>Dados Públicos obtidos do DivulgaCand - TSE</p>
+      </footer>
+      
+</body>
 </html>
